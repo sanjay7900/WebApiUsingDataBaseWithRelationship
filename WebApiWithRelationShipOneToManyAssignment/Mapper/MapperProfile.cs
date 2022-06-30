@@ -12,6 +12,7 @@ namespace WebApiWithRelationShipOneToManyAssignment.Mapper
         {
             CreateMap<Teacher, TeacherModel>().ReverseMap();
             CreateMap<ClassRoom, ClassRoomModel>().ReverseMap();
+            //CreateMap<BindingTheTeacherAndClassRoom, Teacher>();
         }
     }
 }

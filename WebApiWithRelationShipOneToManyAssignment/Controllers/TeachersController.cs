@@ -52,7 +52,9 @@ namespace WebApiWithRelationShipOneToManyAssignment.Controllers
             //}
             //Console.WriteLine("jjjjjjkkkkkkkkkkkkkkkkkkkk"+json);
 
-            return await _context.Teachers.ToListAsync();
+            // return await _context.Teachers.ToListAsync();
+            var obj = _context.Teachers.Include(t => t.ClassRoomsList).ToList();
+           return Ok(_mapper.Map<List<Teacher>>(obj));
         }
 
         // GET: api/Teachers/5
@@ -63,14 +65,15 @@ namespace WebApiWithRelationShipOneToManyAssignment.Controllers
           {
               return NotFound();
           }
-            var teacher = await _context.Teachers.FindAsync(id);
-
+            //var teacher = await _context.Teachers.FindAsync(id);
+            var teacher = _context.Teachers.Where(t=>t.TeacherID == id).Include(cls=>cls.ClassRoomsList).FirstOrDefault();
             if (teacher == null)
             {
                 return NotFound();
             }
 
-            return teacher;
+            //return Ok(teacher);
+            return _mapper.Map<Teacher>(teacher);   
         }
 
         // PUT: api/Teachers/5
@@ -80,13 +83,19 @@ namespace WebApiWithRelationShipOneToManyAssignment.Controllers
         {
             var obj = _mapper.Map<Teacher>(teacher.TeacherModel);
             var list = _mapper.Map<List<ClassRoom>>(teacher.ClassRoomModelList);
-            obj.ClassRoomsList = list;
+            var up = _context.Teachers.Where(t => t.TeacherID == id).Include(c => c.ClassRoomsList).FirstOrDefault();
+            
+            
+            up.Address = obj.Address;
+            up.TeacherName=obj.TeacherName;
+            
+            up.ClassRoomsList=list;
             if (id != obj.TeacherID)
             {
                 return BadRequest();
             }
-
-            _context.Entry(obj).State = EntityState.Modified;
+            _context.Update(up);
+            //_context.Entry(up).State = EntityState.Modified;
             
 
             try
