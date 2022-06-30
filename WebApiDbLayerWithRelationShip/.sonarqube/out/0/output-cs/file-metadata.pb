@@ -1,0 +1,10 @@
+_
+VD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\DbContextLayerForRelation.csutf-8p
+gD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\Migrations\20220630065734_initialMigration.csutf-8{
+pD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\Migrations\20220630065734_initialMigration.Designer.csutf-8y
+nD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\Migrations\DbContextLayerForRelationModelSnapshot.csutf-8U
+LD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\Model\ClassRoom.csutf-8S
+JD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\Model\Teacher.csutf-8…
+zD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\obj\Debug\net6.0\WebApiDbLayerWithRelationShip.GlobalUsings.g.csutf-8„
+yD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8ƒ
+xD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\obj\Debug\net6.0\WebApiDbLayerWithRelationShip.AssemblyInfo.csutf-8

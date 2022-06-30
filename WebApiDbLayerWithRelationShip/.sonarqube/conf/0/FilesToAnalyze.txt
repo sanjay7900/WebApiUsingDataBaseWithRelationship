@@ -1,0 +1,6 @@
+﻿D:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\DbContextLayerForRelation.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\Migrations\20220630065734_initialMigration.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\Migrations\20220630065734_initialMigration.Designer.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\Migrations\DbContextLayerForRelationModelSnapshot.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\Model\ClassRoom.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\Model\Teacher.cs

@@ -1,0 +1,13 @@
+﻿D:\aspdotnet\CSharpOPPsRepo\WebApiWithRelationShipOneToManyAssignment\ApiModel\BindingTheTeacherAndClassRoom.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiWithRelationShipOneToManyAssignment\ApiModel\ClassRoomModel.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiWithRelationShipOneToManyAssignment\ApiModel\TeacherModel.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiWithRelationShipOneToManyAssignment\Controllers\TeachersController.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiWithRelationShipOneToManyAssignment\Mapper\MapperProfile.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiWithRelationShipOneToManyAssignment\Program.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiWithRelationShipOneToManyAssignment\obj\Debug\net6.0\WebApiWithRelationShipOneToManyAssignment.GlobalUsings.g.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiWithRelationShipOneToManyAssignment\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiWithRelationShipOneToManyAssignment\obj\Debug\net6.0\WebApiWithRelationShipOneToManyAssignment.AssemblyInfo.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiWithRelationShipOneToManyAssignment\obj\Debug\net6.0\WebApiWithRelationShipOneToManyAssignment.MvcApplicationPartsAssemblyInfo.cs
+D:\aspdotnet\CSharpOPPsRepo\WebApiWithRelationShipOneToManyAssignment\appsettings.Development.json
+D:\aspdotnet\CSharpOPPsRepo\WebApiWithRelationShipOneToManyAssignment\appsettings.json
+D:\aspdotnet\CSharpOPPsRepo\WebApiWithRelationShipOneToManyAssignment\Properties\launchSettings.json

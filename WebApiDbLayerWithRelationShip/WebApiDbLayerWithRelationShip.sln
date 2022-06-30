@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiDbLayerWithRelationShip", "WebApiDbLayerWithRelationShip.csproj", "{8FEC210D-761F-4839-8553-4415BA246DAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiWithRelationShipOneToManyAssignment", "..\WebApiWithRelationShipOneToManyAssignment\WebApiWithRelationShipOneToManyAssignment.csproj", "{28A60C8A-35E8-496B-8C70-F1F0AEF1B384}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FEC210D-761F-4839-8553-4415BA246DAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FEC210D-761F-4839-8553-4415BA246DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FEC210D-761F-4839-8553-4415BA246DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FEC210D-761F-4839-8553-4415BA246DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A60C8A-35E8-496B-8C70-F1F0AEF1B384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A60C8A-35E8-496B-8C70-F1F0AEF1B384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A60C8A-35E8-496B-8C70-F1F0AEF1B384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A60C8A-35E8-496B-8C70-F1F0AEF1B384}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CD18959-9A7B-45AD-BB3A-7185882E69AD}
+	EndGlobalSection
+EndGlobal
