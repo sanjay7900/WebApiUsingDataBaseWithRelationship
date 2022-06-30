@@ -136,27 +136,6 @@
           "properties": {
             "warningLevel": 1
           }
-        },
-        {
-          "ruleId": "S927",
-          "level": "warning",
-          "message": "Rename parameter 'dbContextOptionsBuilder' to 'optionsBuilder' to match the base class declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/aspdotnet/CSharpOPPsRepo/WebApiDbLayerWithRelationShip/DbContextLayerForRelation.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 71,
-                  "endLine": 17,
-                  "endColumn": 94
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
         }
       ],
       "rules": {
@@ -171,23 +150,6 @@
             "tags": [
               "Compiler",
               "Telemetry"
-            ]
-          }
-        },
-        "S927": {
-          "id": "S927",
-          "shortDescription": "Parameter names should match base declaration and other partial definitions",
-          "fullDescription": "The name of a parameter in an externally visible. This rule raises an issue when method override does not match the name of the parameter in the base declaration of the method, or the name of the parameter in the interface declaration of the method or the name of any other partial definition.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
-          "properties": {
-            "category": "Critical Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
             ]
           }
         }

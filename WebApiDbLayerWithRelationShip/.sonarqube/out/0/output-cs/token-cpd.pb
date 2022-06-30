@@ -1,4 +1,4 @@
-Ë
+¹
 VD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\DbContextLayerForRelation.cs
 	namespace		 	)
 WebApiDbLayerWithRelationShip		
@@ -10,8 +10,8 @@ VD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\DbContextLayerForRela
 
 class %
 DbContextLayerForRelation *
-:* +
-	DbContext+ 4
+:+ ,
+	DbContext- 6
 { 
 public 
 DbSet 
@@ -55,29 +55,29 @@ ClassRooms  *
 (I J
 optionsJ Q
 )Q R
-{S T
-}U V
-	protected 
-override 
-void 
-OnConfiguring  -
-(- .#
-DbContextOptionsBuilder. E#
-dbContextOptionsBuilderF ]
-)] ^
-{ 	#
-dbContextOptionsBuilder #
-.# $
-UseSqlServer$ 0
-(0 1
-$str	1 ¡
+{R S
+}T U
+	protected 
+override 
+void 
+OnConfiguring  -
+(- .#
+DbContextOptionsBuilder. E
+optionsBuilderF T
+)T U
+{ 	
+optionsBuilder 
+. 
+UseSqlServer '
+(' (
+$str	( ˜
 )
-¡ ¢
+˜ ™
 ;
-¢ £
-} 	
-} 
-} ¬)
+™ š
+} 	
+} 
+} ¬)
 gD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\Migrations\20220630065734_initialMigration.cs
 	namespace 	)
 WebApiDbLayerWithRelationShip

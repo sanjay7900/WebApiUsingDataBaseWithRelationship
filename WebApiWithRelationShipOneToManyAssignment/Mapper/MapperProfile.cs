@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
 using WebApiDbLayerWithRelationShip.Model;
 using WebApiWithRelationShipOneToManyAssignment.ApiModel;
-//using WebApiDbLayerWithRelationShip.Model;
-//using WebApiWithRelationShipOneToManyAssignment.ApiModel;
+
 
 namespace WebApiWithRelationShipOneToManyAssignment.Mapper
 {
@@ -12,7 +11,6 @@ namespace WebApiWithRelationShipOneToManyAssignment.Mapper
         {
             CreateMap<Teacher, TeacherModel>().ReverseMap();
             CreateMap<ClassRoom, ClassRoomModel>().ReverseMap();
-            //CreateMap<BindingTheTeacherAndClassRoom, Teacher>();
         }
     }
 }

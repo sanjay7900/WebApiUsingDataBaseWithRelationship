@@ -8,15 +8,16 @@ using WebApiDbLayerWithRelationShip.Model;
 
 namespace WebApiDbLayerWithRelationShip
 {
-    public class DbContextLayerForRelation:DbContext
+    public class DbContextLayerForRelation : DbContext
     {
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<ClassRoom> ClassRooms { get; set; }
         public DbContextLayerForRelation() { }
-        public DbContextLayerForRelation(DbContextOptions options) : base(options) { }  
-        protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
+        public DbContextLayerForRelation(DbContextOptions options) : base(options){ }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            dbContextOptionsBuilder.UseSqlServer(@"Data Source=DESKTOP-AMR2CQS\MSSQLSERVER01;Initial Catalog=WebApiDatabaseWithRelation;Integrated Security=True");
+            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-AMR2CQS\MSSQLSERVER01;Initial Catalog=WebApiDatabaseWithRelation;Integrated Security=True");
         }
 
 

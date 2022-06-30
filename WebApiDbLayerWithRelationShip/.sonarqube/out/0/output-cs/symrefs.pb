@@ -8,8 +8,8 @@ VD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\DbContextLayerForRela
   *
 : AJ Q
 
-  -
-F ] #£
+  -
+F T £
 gD:\aspdotnet\CSharpOPPsRepo\WebApiDbLayerWithRelationShip\Migrations\20220630065734_initialMigration.cs
 
  )

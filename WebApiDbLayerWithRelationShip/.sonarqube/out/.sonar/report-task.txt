@@ -1,6 +1,6 @@
-projectKey=Web-Api-Using-Database-With-One-to-Many-Relationship
+projectKey=Web-Api-EF-core-Code-First-All-Http-Verbs-Assignment
 serverUrl=http://localhost:9000
 serverVersion=9.5.0.56709
-dashboardUrl=http://localhost:9000/dashboard?id=Web-Api-Using-Database-With-One-to-Many-Relationship
-ceTaskId=AYGzldi9omm07Y5RlcM-
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYGzldi9omm07Y5RlcM-
+dashboardUrl=http://localhost:9000/dashboard?id=Web-Api-EF-core-Code-First-All-Http-Verbs-Assignment
+ceTaskId=AYG1IR9V6PQQpoKYgNZO
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYG1IR9V6PQQpoKYgNZO

@@ -7,7 +7,7 @@
   <HasBeginStepCommandLineCredentials>true</HasBeginStepCommandLineCredentials>
   <SonarQubeHostUrl>http://localhost:9000</SonarQubeHostUrl>
   <SonarQubeVersion>9.5.0.56709</SonarQubeVersion>
-  <SonarProjectKey>Web-Api-Using-Database-With-One-to-Many-Relationship</SonarProjectKey>
+  <SonarProjectKey>Web-Api-EF-core-Code-First-All-Http-Verbs-Assignment</SonarProjectKey>
   <AdditionalConfig>
     <ConfigSetting Id="BuildUri" />
     <ConfigSetting Id="TfsUri" />
@@ -110,7 +110,7 @@
     <Property Name="sonaranalyzer-vbnet.pluginKey">vbnet</Property>
     <Property Name="sonar.updatecenter.url">https://update.sonarsource.org/update-center.properties</Property>
     <Property Name="sonar.core.id">147B411E-AYGPI6TDrXHcL6rWklr4</Property>
-    <Property Name="sonar.core.startTime">6/30/2022 1:07:23 PM</Property>
+    <Property Name="sonar.core.startTime">6/30/2022 8:15:12 PM</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>
@@ -127,7 +127,6 @@
             <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CFG.dll</Path>
             <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CSharp.dll</Path>
             <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.dll</Path>
-            <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\0\THIRD-PARTY-NOTICES.txt</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
         <AnalyzerPlugin Key="vbnet" Version="8.40.0.48530" StaticResourceName="SonarAnalyzer-8.40.0.48530.zip">
@@ -136,7 +135,6 @@
             <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.CFG.dll</Path>
             <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
             <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.VisualBasic.dll</Path>
-            <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\1\THIRD-PARTY-NOTICES.txt</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
       </AnalyzerPlugins>
@@ -155,7 +153,6 @@
             <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CFG.dll</Path>
             <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CSharp.dll</Path>
             <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.dll</Path>
-            <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\0\THIRD-PARTY-NOTICES.txt</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
         <AnalyzerPlugin Key="vbnet" Version="8.40.0.48530" StaticResourceName="SonarAnalyzer-8.40.0.48530.zip">
@@ -164,7 +161,6 @@
             <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.CFG.dll</Path>
             <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
             <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.VisualBasic.dll</Path>
-            <Path>C:\Users\Lenovo\AppData\Local\Temp\.sonarqube\resources\1\THIRD-PARTY-NOTICES.txt</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
       </AnalyzerPlugins>

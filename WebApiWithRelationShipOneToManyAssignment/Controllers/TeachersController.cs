@@ -27,7 +27,7 @@ namespace WebApiWithRelationShipOneToManyAssignment.Controllers
             _mapper = mapper;   
         }
 
-        // GET: api/Teachers
+        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Teacher>>> GetTeachers()
         {
@@ -35,29 +35,13 @@ namespace WebApiWithRelationShipOneToManyAssignment.Controllers
           {
               return NotFound();
           }
-            //var teachersList = 
-            //var json=JsonConvert.SerializeObject(item);
-            //List<Teacher> result = new List<Teacher>();
-            //List<ClassRoom> classes = new List<ClassRoom>();
-            //foreach (var items in item)
-            //{
-            //    Console.WriteLine(items.TeacherName);
-            //    Console.WriteLine(items.Address);
-            //    foreach (var cls in items.classRooms)
-            //    {
-            //        Console.WriteLine(cls.Name.ToString());
-            //    }
-
-
-            //}
-            //Console.WriteLine("jjjjjjkkkkkkkkkkkkkkkkkkkk"+json);
-
-            // return await _context.Teachers.ToListAsync();
+           
+            
             var obj = _context.Teachers.Include(t => t.ClassRoomsList).ToList();
-           return Ok(_mapper.Map<List<Teacher>>(obj));
+           return Ok(obj);
         }
 
-        // GET: api/Teachers/5
+        
         [HttpGet("{id}")]
         public async Task<ActionResult<Teacher>> GetTeacher(int id)
         {
@@ -65,37 +49,40 @@ namespace WebApiWithRelationShipOneToManyAssignment.Controllers
           {
               return NotFound();
           }
-            //var teacher = await _context.Teachers.FindAsync(id);
             var teacher = _context.Teachers.Where(t=>t.TeacherID == id).Include(cls=>cls.ClassRoomsList).FirstOrDefault();
+
             if (teacher == null)
             {
                 return NotFound();
             }
 
-            //return Ok(teacher);
-            return _mapper.Map<Teacher>(teacher);   
+            return Ok(teacher);
         }
 
-        // PUT: api/Teachers/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTeacher(int id, BindingTheTeacherAndClassRoom teacher)
         {
-            var obj = _mapper.Map<Teacher>(teacher.TeacherModel);
-            var list = _mapper.Map<List<ClassRoom>>(teacher.ClassRoomModelList);
-            var up = _context.Teachers.Where(t => t.TeacherID == id).Include(c => c.ClassRoomsList).FirstOrDefault();
             
-            
-            up.Address = obj.Address;
-            up.TeacherName=obj.TeacherName;
-            
-            up.ClassRoomsList=list;
-            if (id != obj.TeacherID)
+            var updateObj = _context.Teachers.Where(t => t.TeacherID == id).Include(c => c.ClassRoomsList).FirstOrDefault();
+            if(updateObj == null)
+            {
+                return BadRequest();    
+            }
+            var teacherObj = _mapper.Map<Teacher>(teacher.TeacherModel);
+
+            if (id != teacherObj.TeacherID)
             {
                 return BadRequest();
             }
-            _context.Update(up);
-            //_context.Entry(up).State = EntityState.Modified;
+            var classObj = _mapper.Map<List<ClassRoom>>(teacher.ClassRoomModelList);
+
+            updateObj.Address = teacherObj.Address;
+            updateObj.TeacherName= teacherObj.TeacherName;
+
+            updateObj.ClassRoomsList= classObj;
+            
+            _context.Update(updateObj);
             
 
             try
@@ -117,8 +104,7 @@ namespace WebApiWithRelationShipOneToManyAssignment.Controllers
             return NoContent();
         }
 
-        // POST: api/Teachers
-        // To protect from overposting attacks,Task<ActionResult<Teacher>>  see https://go.microsoft.com/fwlink/?linkid=2123754
+        
         [HttpPost]
         public async Task<ActionResult<Teacher>> PostTeacher(BindingTheTeacherAndClassRoom getInfo)
         {
@@ -132,10 +118,10 @@ namespace WebApiWithRelationShipOneToManyAssignment.Controllers
              _context.Teachers.Add(teacherobj);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetTeacher", new { id = teacherobj.TeacherID }, teacherobj);
+            return Ok("Added");
         }
 
-        // DELETE: api/Teachers/5
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTeacher(int id)
         {
@@ -143,17 +129,30 @@ namespace WebApiWithRelationShipOneToManyAssignment.Controllers
             {
                 return NotFound();
             }
-            var teacher =  await _context.Teachers.FindAsync(id);
-           // var clsList =  _context.ClassRooms.Where(c=>c.Teacher==teacher).ToList();
-            if (teacher == null)
+            var teacherDelete =  await _context.Teachers.FindAsync(id);
+            if (teacherDelete == null)
             {
                 return NotFound();
             }
             
-            _context.Teachers.Remove(teacher);
+            _context.Teachers.Remove(teacherDelete);
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+        [HttpPatch("{id}")]
+        public async Task<ActionResult> PatchTeacher(string Name,string Address,int id)
+        {
+            var teacherNameAndAddressUpdate = _context.Teachers.Where(t => t.TeacherID == id).FirstOrDefault(); 
+            if(teacherNameAndAddressUpdate == null)
+            {
+                return BadRequest();
+            }
+            teacherNameAndAddressUpdate.TeacherName = Name;
+            teacherNameAndAddressUpdate.Address = Address;  
+            _context.Update(teacherNameAndAddressUpdate);
+          await  _context.SaveChangesAsync();
+            return Ok("updated  !");
         }
 
         private bool TeacherExists(int id)
